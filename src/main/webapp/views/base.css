@@ -1,0 +1,94 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-family: 'Gowun Dodum', sans-serif;
+}
+.container {
+	background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(../images/clouds.jpg);
+    background-attachment: fixed;
+    width: 100%;
+}
+.container .header {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color:white;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 1;
+}
+.header {
+	border-bottom: 1px solid #ccc;
+}
+.header.on { 
+    position: fixed; 
+}
+.header.on .inner {
+	height: 70px; 
+}
+.container .header .nav {
+    flex: 15%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+}
+.container .header .logo {
+    flex: 15%;
+}
+.nav >li {
+    margin-left: 12px;
+}
+ul , li {
+    list-style: none;  
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu_wrap {
+    flex: 70%;
+    display: flex;
+    justify-content: center; 
+}
+.menu_wrap .dep1 > li {
+    display: table-cell;
+    vertical-align:middle;
+    flex-direction: row;
+    width: 150px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 20px;
+}
+.menu_wrap .dep1 > li > span {
+    display: block;
+    padding: 10px 10px;
+}
+.menu_wrap .dep1 > li:hover > span {
+    background-color: azure;
+    font-weight: bold;
+    color: darkgray;
+}
+.menu_wrap .dep1 > li:hover > .dep2 {
+    display: block;
+    background-color: white;
+}
+.menu_wrap .dep1 > li > .dep2:hover > li {
+    display: block;
+}
+.menu_wrap .dep2 {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu_wrap .dep2 a {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.menu_wrap .dep2 a:hover {
+    color: #999;
+}
